@@ -1,0 +1,149 @@
+
+
+body{
+    background-color: #FFFAF0;
+}
+
+.foto-slider{
+    border-radius: 20px;
+}
+
+.foto-slider img{
+    border-radius: 20px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.body-login{
+    display: flex;
+    flex-direction: row;
+}
+
+.section-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-login{
+    height: 50px;
+    background-color: #FFFAF0;
+    border: 1px solid rgb(57, 27, 5, 0.5);
+    color: #391B05;
+}
+
+.form-login:focus{
+    border: 1px solid rgb(57, 27, 5, 0.5);
+    background-color: #FFFAF0;
+    color: #391B05;
+    text-decoration: none;
+}
+
+.judul{
+    font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    color: #391B05;
+}
+
+.btn-submit{
+    background-color: #972628;
+    color: #FFFAF0;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    height: 50px;
+    margin-bottom: 25px;
+}
+
+.btn-submit:hover{
+    background-color: #FFFAF0;
+    border: 1px solid rgb(57, 27, 5, 0.5);
+    color: #391B05;
+}
+
+.signin-link{
+    font-size: 16px;
+    color: #391B05;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.signin-link a{
+    color: #972628;
+    text-decoration: none;
+    
+}
+
+.merk{
+    font-size: 40px;
+    font-weight: 500;
+    color: #391B05;
+    letter-spacing: 2px;
+}
+
+.RatingBarang{
+    display: flex;
+}
+
+.ratingbarang{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.namabarang{
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.harga{
+    font-size: 50px;
+    font-weight: 600;
+    color: #391B05;
+}
+
+.colorJudul{
+    font-size: 18px;
+    color: #391B05;
+    letter-spacing: 1px;
+}
+
+.kotak-itemColor{
+    background-color: red;
+    border-radius: 10px;
+    height: 50px;
+    width: 50px;
+}
+
+.kotak-itemSize{
+    border-radius: 10px;
+    height: 50px;
+    width: 50px;
+    background-color: #FFFAF0;
+    border: 1px solid rgb(57, 27, 5, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sizeJudul{
+    font-size: 18px;
+    color: #391B05;
+    letter-spacing: 1px;
+
+}
+
+.btn-pickColor:hover{
+    border: 1px solid rgb(57, 27, 5, 0.5);
+}
+
+.checked {  
+    color : #391B05;  
+    font-size : 20px;  
+}  
+
+.unchecked {  
+    font-size : 20px; 
+}  
+
