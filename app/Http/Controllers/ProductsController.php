@@ -58,7 +58,7 @@ class ProductsController extends Controller
     }
 
     public function dataecommerce(){
-        $products = Products::paginate(14);
+        $products = Products::paginate(9);
 
         return view('Ecommerce',compact('products'));
     }

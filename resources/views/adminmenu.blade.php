@@ -45,87 +45,7 @@
             </a>
 					</li>
 
-					<li class="sidebar-item">
-						<a class="sidebar-link" href="pages-sign-in.html">
-              <i class="align-middle" data-feather="log-in"></i> <span class="align-middle">Sign In</span>
-            </a>
-					</li>
-
-					<li class="sidebar-item">
-						<a class="sidebar-link" href="pages-sign-up.html">
-              <i class="align-middle" data-feather="user-plus"></i> <span class="align-middle">Sign Up</span>
-            </a>
-					</li>
-
-					<li class="sidebar-item">
-						<a class="sidebar-link" href="pages-blank.html">
-              <i class="align-middle" data-feather="book"></i> <span class="align-middle">Blank</span>
-            </a>
-					</li>
-
-					<li class="sidebar-header">
-						Tools & Components
-					</li>
-
-					<li class="sidebar-item">
-						<a class="sidebar-link" href="ui-buttons.html">
-              <i class="align-middle" data-feather="square"></i> <span class="align-middle">Buttons</span>
-            </a>
-					</li>
-
-					<li class="sidebar-item">
-						<a class="sidebar-link" href="ui-forms.html">
-              <i class="align-middle" data-feather="check-square"></i> <span class="align-middle">Forms</span>
-            </a>
-					</li>
-
-					<li class="sidebar-item">
-						<a class="sidebar-link" href="ui-cards.html">
-              <i class="align-middle" data-feather="grid"></i> <span class="align-middle">Cards</span>
-            </a>
-					</li>
-
-					<li class="sidebar-item">
-						<a class="sidebar-link" href="ui-typography.html">
-              <i class="align-middle" data-feather="align-left"></i> <span class="align-middle">Typography</span>
-            </a>
-					</li>
-
-					<li class="sidebar-item">
-						<a class="sidebar-link" href="icons-feather.html">
-              <i class="align-middle" data-feather="coffee"></i> <span class="align-middle">Icons</span>
-            </a>
-					</li>
-
-					<li class="sidebar-header">
-						Plugins & Addons
-					</li>
-
-					<li class="sidebar-item">
-						<a class="sidebar-link" href="charts-chartjs.html">
-              <i class="align-middle" data-feather="bar-chart-2"></i> <span class="align-middle">Charts</span>
-            </a>
-					</li>
-
-					<li class="sidebar-item">
-						<a class="sidebar-link" href="maps-google.html">
-              <i class="align-middle" data-feather="map"></i> <span class="align-middle">Maps</span>
-            </a>
-					</li>
-				</ul>
-
-				<div class="sidebar-cta">
-					<div class="sidebar-cta-content">
-						<strong class="d-inline-block mb-2">Upgrade to Pro</strong>
-						<div class="mb-3 text-sm">
-							Are you looking for more components? Check out our premium version.
-						</div>
-						<div class="d-grid">
-							<a href="upgrade-to-pro.html" class="btn btn-primary">Upgrade to Pro</a>
-						</div>
-					</div>
-				</div>
-			</div>
+					
 		</nav>
 
 		<div class="main">
@@ -136,83 +56,7 @@
 
 				<div class="navbar-collapse collapse">
 					<ul class="navbar-nav navbar-align">
-						<li class="nav-item dropdown">
-							<a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-bs-toggle="dropdown">
-								<div class="position-relative">
-									<i class="align-middle" data-feather="bell"></i>
-									<span class="indicator">4</span>
-								</div>
-							</a>
-							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0" aria-labelledby="alertsDropdown">
-								<div class="dropdown-menu-header">
-									4 New Notifications
-								</div>
-								<div class="list-group">
-									<a href="#" class="list-group-item">
-										<div class="row g-0 align-items-center">
-											<div class="col-2">
-												<i class="text-danger" data-feather="alert-circle"></i>
-											</div>
-											<div class="col-10">
-												<div class="text-dark">Update completed</div>
-												<div class="text-muted small mt-1">Restart server 12 to complete the update.</div>
-												<div class="text-muted small mt-1">30m ago</div>
-											</div>
-										</div>
-									</a>
-									<a href="#" class="list-group-item">
-										<div class="row g-0 align-items-center">
-											<div class="col-2">
-												<i class="text-warning" data-feather="bell"></i>
-											</div>
-											<div class="col-10">
-												<div class="text-dark">Lorem ipsum</div>
-												<div class="text-muted small mt-1">Aliquam ex eros, imperdiet vulputate hendrerit et.</div>
-												<div class="text-muted small mt-1">2h ago</div>
-											</div>
-										</div>
-									</a>
-									<a href="#" class="list-group-item">
-										<div class="row g-0 align-items-center">
-											<div class="col-2">
-												<i class="text-primary" data-feather="home"></i>
-											</div>
-											<div class="col-10">
-												<div class="text-dark">Login from 192.186.1.8</div>
-												<div class="text-muted small mt-1">5h ago</div>
-											</div>
-										</div>
-									</a>
-									<a href="#" class="list-group-item">
-										<div class="row g-0 align-items-center">
-											<div class="col-2">
-												<i class="text-success" data-feather="user-plus"></i>
-											</div>
-											<div class="col-10">
-												<div class="text-dark">New connection</div>
-												<div class="text-muted small mt-1">Christina accepted your request.</div>
-												<div class="text-muted small mt-1">14h ago</div>
-											</div>
-										</div>
-									</a>
-								</div>
-								<div class="dropdown-menu-footer">
-									<a href="#" class="text-muted">Show all notifications</a>
-								</div>
-							</div>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-icon dropdown-toggle" href="#" id="messagesDropdown" data-bs-toggle="dropdown">
-								<div class="position-relative">
-									<i class="align-middle" data-feather="message-square"></i>
-								</div>
-							</a>
 							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0" aria-labelledby="messagesDropdown">
-								<div class="dropdown-menu-header">
-									<div class="position-relative">
-										4 New Messages
-									</div>
-								</div>
 								<div class="list-group">
 									<a href="#" class="list-group-item">
 										<div class="row g-0 align-items-center">
@@ -560,34 +404,6 @@
 
 				</div>
 			</main>
-
-			<footer class="footer">
-				<div class="container-fluid">
-					<div class="row text-muted">
-						<div class="col-6 text-start">
-							<p class="mb-0">
-								<a class="text-muted" href="https://adminkit.io/" target="_blank"><strong>AdminKit</strong></a> - <a class="text-muted" href="https://adminkit.io/" target="_blank"><strong>Bootstrap Admin Template</strong></a>								&copy;
-							</p>
-						</div>
-						<div class="col-6 text-end">
-							<ul class="list-inline">
-								<li class="list-inline-item">
-									<a class="text-muted" href="https://adminkit.io/" target="_blank">Support</a>
-								</li>
-								<li class="list-inline-item">
-									<a class="text-muted" href="https://adminkit.io/" target="_blank">Help Center</a>
-								</li>
-								<li class="list-inline-item">
-									<a class="text-muted" href="https://adminkit.io/" target="_blank">Privacy</a>
-								</li>
-								<li class="list-inline-item">
-									<a class="text-muted" href="https://adminkit.io/" target="_blank">Terms</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</footer>
 		</div>
 	</div>
 

@@ -40,6 +40,7 @@ class RegisteredUserController extends Controller
             'phonenumber'=>['required','min:10','max:13'],
             'image'=>['required'],
             'password' => ['required', 'min:3', 'max:1000'],
+
         ]);
 
 

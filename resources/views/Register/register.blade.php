@@ -88,8 +88,8 @@
                                 <select class="form-select form-login mb-3" aria-label="Default select example"
                                     name="gender">
                                     <option selected>Gender</option>
-                                    <option value="1">Male</option>
-                                    <option value="2">Female</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
                                 </select>
                             </div>
                             <div class="col input-group mb-3">

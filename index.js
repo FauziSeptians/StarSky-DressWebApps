@@ -4,7 +4,7 @@ const app = express();
 const http = require('http');
 const server = http.createServer(app);
 const { Server } = require("socket.io");
-
+``
 app.use(cors());``
 
 const io = new Server(server, {
@@ -120,6 +120,7 @@ io.on('connection', (socket) => {
 
         if (winner !== '') {
             io.to(roomId).emit('winner', winner);
+            // history.pushState({}, "", "/home");
         }
 
         // check if there is a draw
@@ -131,6 +132,7 @@ io.on('connection', (socket) => {
         }
         if (draw) {
             io.to(roomId).emit('winner', 'draw');
+            // history.pushState({}, "", "/home");
         }
     });
 

@@ -9,7 +9,7 @@ class AdminController extends Controller
 {
     //
     public function usertable(){
-        $user = User::all();
+        $user = User::where('Admin','!=',1)->get();
 
         return view('pagesprofile',compact('user'));
     }
@@ -26,5 +26,11 @@ class AdminController extends Controller
 
         return view('pagesprofile',compact('user'));
     }
+
+    // public function admin($id){
+    //     $user = User::where('id',$id)->first();
+
+    //     return view('adminmenu',compact('user'));
+    // }
 
 }

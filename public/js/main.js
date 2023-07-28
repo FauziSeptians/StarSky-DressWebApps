@@ -108,10 +108,27 @@ function renderBoard() {
     let boardDiv = document.getElementById('board');
     let boardHTML = '';
     for (let i = 0; i < board.length; i++) {
-        boardHTML += `
-        <div onclick="handleClick(${i})" class="col border border-5 border-secondary p-5 ${board[i] === 'O' ? 'bg-success' : board[i] === 'X' ? 'bg-danger' : ''}">
-        <h2 class="text-center text-white">${board[i]}</h2>
-        </div>`;
+        if(i == 0 || i == 1 || i == 3 || i == 4){
+            boardHTML += `
+            <div onclick="handleClick(${i})" class="col border-bottom border-right border-secondary p-5 ${board[i] === 'O' ? 'bg-success' : board[i] === 'X' ? 'bg-danger' : ''}">
+            <h2 class="text-center text-brown">${board[i]}</h2>
+            </div>`;
+        }else if(i == 2 || i == 5){
+            boardHTML += `
+            <div onclick="handleClick(${i})" class="col border-bottom border-secondary p-5 ${board[i] === 'O' ? 'bg-success' : board[i] === 'X' ? 'bg-danger' : ''}">
+            <h2 class="text-center  text-brown">${board[i]}</h2>
+            </div>`;
+        }else if(i == 7){
+            boardHTML += `
+            <div onclick="handleClick(${i})" class="col border-left border-right border-secondary p-5 ${board[i] === 'O' ? 'bg-success' : board[i] === 'X' ? 'bg-danger' : ''}">
+            <h2 class="text-center  text-brown">${board[i]}</h2>
+            </div>`;
+        }else{
+            boardHTML += `
+            <div onclick="handleClick(${i})" class="col border-secondary p-5  ${board[i] === 'O' ? 'bg-success' : board[i] === 'X' ? 'bg-danger' : ''}">
+            <h2 class="text-center  text-brown">${board[i]}</h2>
+            </div>`;
+        }
     }
     boardDiv.innerHTML = boardHTML;
 }

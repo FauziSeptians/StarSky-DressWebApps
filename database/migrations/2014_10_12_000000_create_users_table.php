@@ -17,12 +17,14 @@ return new class extends Migration
             $table->string('name');
             $table->string('datingcode');
             $table->string('birthdate');
+            $table->string('gender');
             $table->string('phonenumber');
             $table->string('image');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->String('Banned')->default('NO');
             $table->string('password');
+            $table->boolean('Admin')->default(0);
             $table->rememberToken();
             $table->timestamps();
         });

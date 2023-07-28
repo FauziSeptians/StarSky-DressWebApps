@@ -12,6 +12,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
     </script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+    </script>
     <style>
         /* body {
             display: flex;
@@ -33,13 +40,13 @@
             display: flex;
             align-items: center;
             overflow: hidden;
-            background-color: #FFFAF0;
+            background-color: dred;
         }
 
         .image-slider {
             width: 100%;
             height: 600px;
-            position: absolute;
+            position: relative;
             left: 0;
             display: flex;
             justify-content: center;
@@ -62,11 +69,12 @@
         }
 
         .button {
-            position: absolute;
+            position: relative;
             width: 240px;
             height: 100%;
-            transition: 0.5s;
-            background-color: rgb(255, 250, 240, 0.6)
+            animation-name: mymove;
+            background-color: rgb(255, 250, 240, 0.2);
+
         }
 
         #textkonten5,
@@ -180,7 +188,7 @@
             bottom: 0;
 
             height: 100px;
-            width: 380px ;
+            width: 380px;
         }
 
         #slider-span2:target~.image-slider #textkonten2 .nama,
@@ -221,20 +229,12 @@
             display: none;
         }
 
-
-
-
-
-
-
-
-        /* 
         #slider-span1:target~.image-slider {
-            left: 20%;
+            left: 10%;
         }
 
         #slider-span2:target~.image-slider {
-            left: 20%;
+            left: 10%;
         }
 
         #slider-span3:target~.image-slider {
@@ -242,12 +242,12 @@
         }
 
         #slider-span4:target~.image-slider {
-            left: -20%;
+            left: -10%;
         }
 
         #slider-span5:target~.image-slider {
-            left: -20%;
-        } */
+            left: -10%;
+        }
 
         .container-keseluruhanbody {
             margin: 50px;
@@ -293,6 +293,14 @@
 </head>
 
 <body>
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
     <div class="container-keseluruhanbody">
         <div class=" mb-3">
             <nav class="" style="display: flex; justify-content:end">
@@ -395,8 +403,8 @@
             <div class="slides-div" id="slide-2">
                 <div class="container" style=" position: relative;">
                     <img src="/images/{{$products[1]->Image}}.jpeg" alt="" class="img" id="img2">
-                    <div class="container d-flex align-items-center justify-content-between textkonten p-0 m-0"
-                        id="textkonten2" >
+                    <div class="container d-flex align-items-center justify-content-between textkonten p-3 m-0"
+                        id="textkonten2">
                         <div class="nama" id="nama" style="font-size: 20px; font-weight:600; letter-spacing:1px">
                             {{$products[1]->ProductName}}
                         </div>
@@ -472,7 +480,7 @@
                                 style="width: 100%; color:black; background-color:#FFFAF0; border:0.1px ridge rgb(0, 0, 0 , 0.3)"
                                 id="location" name="location">
                                 @foreach ($location as $l)
-                                    <option class="p-3" style="margin-top: 20px" {{$l->Location}}">{{$l->Location}}</option>
+                                <option class="p-3" style="margin-top: 20px" {{$l->Location}}">{{$l->Location}}</option>
                                 @endforeach
                             </select>
                             {{-- <div class="dropdown-menu text-center" style="width:100%">
@@ -483,8 +491,8 @@
                             <label for="customRange2 mb-3" class="form-label">Min Price</label>
                             <div class="row">
                                 <div class="col-9">
-                                    <input type="range" class="form-range mt-3" min="0" max="50000000"
-                                        id="customRange2" name="MinPrice">
+                                    <input type="range" class="form-range mt-3" min="0" max="50000000" id="customRange2"
+                                        name="MinPrice">
                                 </div>
                                 <div class="col-3 d-flex">
                                     <div class="rp" style="margin-right: 3px">
@@ -500,8 +508,8 @@
                             <label for="customRange2 mb-3" class="form-label">Max Price</label>
                             <div class="row">
                                 <div class="col-9">
-                                    <input type="range" class="form-range mt-3" min="0" max="50000000"
-                                        id="customRange3" name="MaxPrice">
+                                    <input type="range" class="form-range mt-3" min="0" max="50000000" id="customRange3"
+                                        name="MaxPrice">
                                 </div>
                                 <div class="col-3 d-flex align-items-end">
                                     <div class="rp" style="margin-right: 3px">
@@ -546,7 +554,7 @@
 
         canvas.innerHTML = value;
 
-        
+
         // Tampilkan nilai (value) pada console atau di tempat lain yang diinginkan
 
     });
